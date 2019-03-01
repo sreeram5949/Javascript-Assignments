@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+    DataType
+    </head>
+
+    <body>
+        <h1>Open console</h1>
+        <script>
+            count=1
+while (count<=5){
+ var num = Math.ceil(Math.random() * 10);
+ var gnum = prompt('Guess the number between 1 and 10 inclusive');
+ if (gnum>10)
+    alert('Out of range')
+ else if (gnum == num)
+   {alert('Good Work');
+   break;
+}
+   else if(gnum>num)
+   alert('Not matched, guessed number is greater' );
+   else
+   alert('Not matched, guessed number is smaller' );
+count++;
+}
+</script>
+
+    </body>
+</html>

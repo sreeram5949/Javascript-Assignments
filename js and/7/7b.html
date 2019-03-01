@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+    DataType
+    </head>
+
+    <body>
+        <h1>Open console</h1>
+    <script >
+    //obj=prompt('Object');
+
+var prop=Object.getOwnPropertyNames(Math)
+                .filter(function(a){
+                        return typeof(Math[a])==='function';
+                        });
+
+console.log(prop);
+
+    </script>
+  
+
+    </body>
+</html>

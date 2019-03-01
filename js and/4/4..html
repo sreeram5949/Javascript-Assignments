@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+
+        <title>
+            Multiplication and division of two numbers
+
+        </title>
+    </head>
+    <body>
+        <form>
+            Enter the FirstNumber: <input type="text" id="FirstNumber" /> <br>
+            Enter the SecondNumber: <input type="text" id="SecondNumber" /> <br>
+        <input type="button" onclick="Mu()" value="Multiply"/>
+        <input type="button" onclick="Div()" value="Divide"/>
+        </form>
+
+        <p>
+            The result is: <br>
+            <span id="Result"></span>
+        </p>
+<script>
+function Mu()
+{
+
+   a= document.getElementById("FirstNumber").value;
+   b=document.getElementById("SecondNumber").value;
+   document.getElementById("Result").innerHTML = a*b;
+}
+
+function Div()
+{
+
+   a= document.getElementById("FirstNumber").value;
+   b=document.getElementById("SecondNumber").value;
+   document.getElementById("Result").innerHTML = a/b;
+}
+</script>
+
+    </body>
+</html>

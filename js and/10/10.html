@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+    DataType
+    </head>
+
+    <body>
+        <h1>Open console</h1>
+    <script > 
+    var nam=[];
+nam.push(prompt('enter string')),
+nam.push(prompt('enter string'));
+nam.push(prompt('enter string'));
+nam.push(prompt('enter string'));
+nam.push(prompt('enter string'));
+
+var vow='aeiou';
+
+count=1;
+while (count<=5){
+var element=nam.pop();
+for(i=0; i<vow.length;i++){
+    element=element.replace(vow[i],'');
+}
+console.log(element);
+count++;
+}
+    </script>
+  
+
+    </body>
+</html>
